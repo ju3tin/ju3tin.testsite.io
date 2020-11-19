@@ -1,0 +1,94 @@
+<section class="ts-block pt-0">
+    <div class="container">
+
+        <div class="ts-title">
+            <h2>From The Blog</h2>
+        </div>
+
+        <div class="row">
+{% for post in site.posts limit:1 %}
+            <div class="col-md-4">
+                <div class="ts-blog-thumb">
+                    <a href="{{ post.url }}" class="ts-blog-image">
+                        <div class="ts-background-image ts-img-into-bg">
+                            <img src=" {% if post.featimg %}{{ post.featimg }}{% else %}/assets/img/img__blog__thumb--02.jpg {% endif %}" alt="">
+                        </div>
+                    </a>
+                    <h6>{{ post.date | date: '%B %d, %Y' }}</h6>
+                    <h4>
+                        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">{{ post.title }}</a>
+                    </h4>
+                   <p>{{ post.content | strip_html | strip | truncate: 140 }}&#x02026;</p>
+              <p><a class="more-link" href="{{ post.url }}">Continue Reading</a></p>
+                    <footer>
+                        <a href="#" class="mr-3">
+                            <i class="fa fa-comment"></i>
+                            42
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-heart"></i>
+                            38
+                        </a>
+                    </footer>
+                </div>
+            </div>{% endfor %}
+            <!--end Blog post thumbnail-->
+{% for post in site.posts offset:1 limit:1 %}
+            <div class="col-md-4">
+                <div class="ts-blog-thumb">
+                    <a href="{{ post.url }}" class="ts-blog-image">
+                        <div class="ts-background-image ts-img-into-bg">
+                            <img src=" {% if post.featimg %}{{ post.featimg }}{% else %}/assets/img/img__blog__thumb--02.jpg {% endif %}" alt="">
+                        </div>
+                    </a>
+                    <h6>{{ post.date | date: '%B %d, %Y' }}</h6>
+                    <h4>
+                        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">{{ post.title }}</a>
+                    </h4>
+                   <p>{{ post.content | strip_html | strip | truncate: 140 }}&#x02026;</p>
+              <p><a class="more-link" href="{{ post.url }}">Continue Reading</a></p>
+                    <footer>
+                        <a href="#" class="mr-3">
+                            <i class="fa fa-comment"></i>
+                            42
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-heart"></i>
+                            38
+                        </a>
+                    </footer>
+                </div>
+            </div>{% endfor %}
+            <!--end Blog post thumbnail-->
+{% for post in site.posts offset:2 limit:1 %}
+            <div class="col-md-4">
+                <div class="ts-blog-thumb">
+                    <a href="{{ post.url }}" class="ts-blog-image">
+                        <div class="ts-background-image ts-img-into-bg">
+                            <img src=" {% if post.featimg %}{{ post.featimg }}{% else %}/assets/img/img__blog__thumb--02.jpg {% endif %}" alt="">
+                        </div>
+                    </a>
+                    <h6>{{ post.date | date: '%B %d, %Y' }}</h6>
+                    <h4>
+                        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">{{ post.title }}</a>
+                    </h4>
+                   <p>{{ post.content | strip_html | strip | truncate: 140 }}&#x02026;</p>
+              <p><a class="more-link" href="{{ post.url }}">Continue Reading</a></p>
+                    <footer>
+                        <a href="#" class="mr-3">
+                            <i class="fa fa-comment"></i>
+                            42
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-heart"></i>
+                            38
+                        </a>
+                    </footer>
+                </div>
+            </div>{% endfor %}
+            <!--end Blog post thumbnail-->
+
+        </div>
+
+    </div>
+</section>
