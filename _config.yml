@@ -8,6 +8,7 @@ name: "Justin's Blog"
 
 smallimage: "/img/tinyauthor1.jpg"
 
+sitename: "JustInIT"
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
 # and NOT your user repository (https://yourusername.github.io)
@@ -33,7 +34,8 @@ force-https: True
 
 lang: "en"
 author: "Justin Grierson"
-title: "{ Justin Grierson }"
+logo: "img/logo-ico.png"
+title: "IT Solutions for You Business"
 description: "Blog and website of Justin Grierson, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
@@ -236,7 +238,6 @@ compress_html:
 
 
 # Site Settings
-title: Justin Grierson
 description: Blog and website of Justin Grierson, blogging mainly for tech. Opinions expressed are mine.
 url:
 
