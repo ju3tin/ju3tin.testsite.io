@@ -171,16 +171,22 @@ siteimage: "/assets/img/bg-office1.jpg"
 ##################
 
 sitesocial:
-  - title: "facebook"
+  - title: "Facebook"
     url: "https://facebook.com/justin.grierson.5"
-  - title: "twitter"
+    name: "facebook"
+    viewBox: "0 0 320 512"
+  - title: "Instagram"
     url: "https://twitter.com/ju3t1ng"
-  - title: "github"
+    name: "instagram"
+    viewBox: "0 0 448 512"
+  - title: "LinkedIn"
     url: "https://github.com/ju3tin"
-  - title: "bitcoin"
+    name: "linkedin-in"
+    viewBox: "0 0 448 512"
+  - title: "Twitter"
     url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
-  - title: "rss"
-    url: "/feed.xml"
+    name: "twitter"
+    viewBox: "0 0 512 512"
 
 
 social:
