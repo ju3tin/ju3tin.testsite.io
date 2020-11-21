@@ -35,6 +35,7 @@ force-https: True
 lang: "en"
 author: "Justin Grierson"
 logo: "img/logo-ico.png"
+phone: "+44 7930-512492"
 title: "IT Solutions for You Business"
 description: "Blog and website of Justin Grierson, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
@@ -307,6 +308,9 @@ gems:
   - jekyll-sitemap
   - jekyll-archives
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-redirect-from
 
 # Archives
 jekyll-archives:
