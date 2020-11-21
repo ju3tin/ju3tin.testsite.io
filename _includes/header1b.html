@@ -13,5 +13,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i%7CMontserrat:400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
-
+	<script>
+		// Don't force http when serving the website locally
+		if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+		  window.location.protocol = "https";
+		</script>
 </head>
